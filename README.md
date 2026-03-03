@@ -117,6 +117,91 @@ L'application sera disponible sur **`http://localhost:5000`**
 
 ---
 
+
+---
+
+## 📖 Description des Fichiers Clés
+
+### `run.py`
+Point d'entrée de l'application. Il lance le serveur Flask.
+- Importe l'application créée dans `app/__init__.py`
+- Démarre le serveur avec `app.run()`
+
+```bash
+python run.py  # Ce fichier s'exécute en premier
+```
+
+---
+
+### `config.py`
+Contient la configuration globale du projet.
+- Clé secrète Flask
+- URL de la base de données
+- Mode debug
+- Paramètres environnementaux
+
+> Permet de séparer la configuration du code principal.
+
+---
+
+### `app/__init__.py`
+Cœur de l'application Flask. Il :
+- Crée l'objet `Flask()`
+- Initialise la base de données (SQLAlchemy)
+- Configure l'application
+- Enregistre les routes
+
+> Sans ce fichier, l'application ne peut pas être construite proprement.
+
+---
+
+### `app/routes.py`
+Contient toutes les routes web.
+
+| Route | Description |
+|:---|:---|
+| `/` | Page d'accueil |
+| `/login` | Connexion |
+| `/recommend` | Recommandations |
+
+Chaque fonction correspond à une page ou une action.
+
+---
+
+### `app/models.py`
+Contient les modèles de base de données.
+
+| Modèle | Description |
+|:---|:---|
+| `User` | Utilisateurs de la plateforme |
+| `Restaurant` | Cafés et restaurants |
+| `Rating` | Notes et avis |
+
+Chaque classe représente une table SQL. C'est ici que tu définis la structure des données.
+
+---
+
+### `app/recommender.py`
+Module IA du projet. Il contiendra :
+- Le **filtrage par contenu** (content-based filtering)
+- Le **filtrage collaboratif** (collaborative filtering)
+
+C'est ici que se trouve la logique mathématique et algorithmique.
+
+---
+
+### 🔄 Résumé du Fonctionnement
+
+```
+1. run.py          →  démarre l'application
+2. __init__.py     →  configure Flask & la base de données
+3. routes.py       →  gère les pages et les actions
+4. models.py       →  gère la structure des données
+5. recommender.py  →  génère les recommandations IA
+6. config.py       →  centralise les paramètres
+```
+---
+
 ## 🤝 Comment Contribuer et Fusionner
 
 Chaque fonctionnalité est développée dans une branche dédiée :
