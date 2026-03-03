@@ -20,11 +20,11 @@
 ## 🤖 Système de Recommandation
 
 ```
-📋 Filtrage par Contenu     👥 Filtrage Collaboratif     🔀 Modèle Hybride
-──────────────────────      ────────────────────────     ──────────────────
-Type de cuisine             Notes des utilisateurs       Combinaison pondérée
-Gamme de prix               Utilisateurs similaires      des deux approches
-Tags & localisation         Comportements                Réduit le cold-start
+📋 Filtrage par Contenu     👥 Filtrage Collaboratif
+──────────────────────      ────────────────────────
+Type de cuisine             Notes des utilisateurs
+Gamme de prix               Utilisateurs similaires
+Tags & localisation         Comportements
 ```
 
 ---
@@ -36,7 +36,6 @@ Tags & localisation         Comportements                Réduit le cold-start
 | Authentification (inscription / connexion) | 🔄 Prévu |
 | Ajout et notation de restaurants | 🔄 Prévu |
 | Recommandations personnalisées | 🔄 Prévu |
-| Moteur de recommandation hybride | 🔄 Prévu |
 | Tableau de bord administrateur | 🔄 Prévu |
 | Filtrage par budget | 🔄 Prévu |
 | Recherche et filtrage de restaurants | 🔄 Prévu |
