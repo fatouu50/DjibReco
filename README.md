@@ -1,60 +1,60 @@
 # 🍽️ DjibReco
-### *AI-powered restaurant & café recommender for Djibouti*
+### *Recommandation de cafés et restaurants à Djibouti propulsée par l'IA*
 
-[![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=flat-square)](.)
+[![Statut](https://img.shields.io/badge/Statut-En_Développement-yellow?style=flat-square)](.)
 [![Stack](https://img.shields.io/badge/Stack-Python_%7C_Flask_%7C_Scikit--learn-blue?style=flat-square)](.)
-[![Domain](https://img.shields.io/badge/Domain-AI_%7C_Recommendation_Systems-purple?style=flat-square)](.)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](.)
+[![Domaine](https://img.shields.io/badge/Domaine-IA_%7C_Systèmes_de_Recommandation-purple?style=flat-square)](.)
+[![Licence](https://img.shields.io/badge/Licence-MIT-lightgrey?style=flat-square)](.)
 
-> How can users in Djibouti quickly find cafés and restaurants that match their tastes and budget?  
-> **DjibReco** answers that question with a hybrid AI recommendation engine.
-
----
-
-## 🎯 Overview
-
-**DjibReco** is an AI-powered web application that recommends cafés and restaurants in Djibouti by combining two recommendation approaches into a single hybrid model — delivering personalized suggestions based on user preferences, ratings, and budget.
+> Comment trouver rapidement à Djibouti un café ou un restaurant qui correspond à ses goûts et à son budget ?
+> **DjibReco** répond à cette question grâce à un moteur de recommandation hybride basé sur l'IA.
 
 ---
 
-## 🤖 Recommendation System
+## 🎯 Présentation
+
+**DjibReco** est une application web intelligente qui recommande des cafés et restaurants à Djibouti en combinant deux approches de recommandation dans un modèle hybride — offrant des suggestions personnalisées selon les préférences, les notes et le budget de chaque utilisateur.
+
+---
+
+## 🤖 Système de Recommandation
 
 ```
-📋 Content-Based          👥 Collaborative           🔀 Hybrid Model
-─────────────────         ──────────────────         ──────────────────
-Cuisine type              User ratings               Weighted combination
-Price range               Similar users              of both approaches
-Tags & location           Behavioral patterns        Reduces cold-start
+📋 Filtrage par Contenu     👥 Filtrage Collaboratif     🔀 Modèle Hybride
+──────────────────────      ────────────────────────     ──────────────────
+Type de cuisine             Notes des utilisateurs       Combinaison pondérée
+Gamme de prix               Utilisateurs similaires      des deux approches
+Tags & localisation         Comportements                Réduit le cold-start
 ```
 
 ---
 
-## 🚀 Features
+## 🚀 Fonctionnalités
 
-| Feature | Status |
+| Fonctionnalité | Statut |
 |:---|:---|
-| User authentication (register / login) | 🔄 Planned |
-| Add and rate restaurants | 🔄 Planned |
-| Personalized recommendations | 🔄 Planned |
-| Hybrid recommendation engine | 🔄 Planned |
-| Admin dashboard | 🔄 Planned |
-| Budget-based filtering | 🔄 Planned |
-| Restaurant search and filtering | 🔄 Planned |
+| Authentification (inscription / connexion) | 🔄 Prévu |
+| Ajout et notation de restaurants | 🔄 Prévu |
+| Recommandations personnalisées | 🔄 Prévu |
+| Moteur de recommandation hybride | 🔄 Prévu |
+| Tableau de bord administrateur | 🔄 Prévu |
+| Filtrage par budget | 🔄 Prévu |
+| Recherche et filtrage de restaurants | 🔄 Prévu |
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Stack Technique
 
 ```
 Backend      →  Python 3 · Flask · SQLAlchemy · Scikit-learn
-Database     →  SQLite (development) · PostgreSQL (production)
-Frontend     →  HTML · CSS · Jinja2 templates
-Data         →  Local CSV dataset · User ratings
+Base données →  SQLite (développement) · PostgreSQL (production)
+Frontend     →  HTML · CSS · Templates Jinja2
+Données      →  Fichier CSV local · Notes utilisateurs
 ```
 
 ---
 
-## 📁 Project Structure
+## 📁 Structure du Projet
 
 ```
 DjibReco/
@@ -75,15 +75,15 @@ DjibReco/
 
 ---
 
-## ⚡ Installation & Launch
+## ⚡ Installation & Lancement
 
-### 1. Clone the repository
+### 1. Cloner le dépôt
 ```bash
 git clone https://github.com/fatouu50/DjibReco.git
 cd DjibReco
 ```
 
-### 2. Create and activate a virtual environment
+### 2. Créer et activer un environnement virtuel
 ```bash
 # Windows
 python -m venv venv
@@ -94,27 +94,27 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install dependencies
+### 3. Installer les dépendances
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the application
+### 4. Lancer l'application
 ```bash
 python run.py
 ```
 
-The app will be available at **`http://localhost:5000`**
+L'application sera disponible sur **`http://localhost:5000`**
 
 ---
 
-## 🔮 Future Improvements
+## 🔮 Améliorations Futures
 
-- 🌍 Online deployment
-- 📍 Geolocation-based filtering
-- 📊 Improved ranking algorithm
-- 👥 Real user dataset integration
-- 💬 Reviews and sentiment analysis
+- 🌍 Déploiement en ligne
+- 📍 Filtrage par géolocalisation
+- 📊 Amélioration de l'algorithme de classement
+- 👥 Intégration d'un vrai jeu de données utilisateurs
+- 💬 Analyse des avis et des sentiments
 
 ---
 
@@ -172,7 +172,7 @@ git push origin madina
 
 ### Étape 3 — Fusionner dans `main` après validation
 
-Une fois la fonctionnalité testée et validée, fusionner dans `main` :
+Une fois la fonctionnalité testée et validée :
 
 ```bash
 # 1. Revenir sur main
@@ -202,7 +202,7 @@ git merge kenedid
 
 ---
 
-### 📋 Résumé du flux de travail
+### 📋 Résumé du Flux de Travail
 
 ```
 Ta branche (ex: fatouma)
@@ -218,3 +218,4 @@ Ta branche (ex: fatouma)
       main  ←  git merge fatouma
 ```
 
+---
