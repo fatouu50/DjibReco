@@ -117,3 +117,111 @@ The app will be available at **`http://localhost:5000`**
 - 💬 Reviews and sentiment analysis
 
 ---
+
+## 👤 Author
+
+Developed by [fatouu50](https://github.com/fatouu50)  
+*Master's in Data Modeling & Artificial Intelligence*  
+📩 fatoumasoubere@gmail.com
+
+---
+
+## 🤝 Comment Contribuer et Fusionner
+
+Chaque fonctionnalité est développée dans une branche dédiée :
+
+| Branche | Développeur |
+|:---|:---|
+| `fatouma` | Fatouma |
+| `madina` | Madina |
+| `mako` | Mako |
+| `kadiga` | Kadiga |
+| `samira` | Samira |
+| `asma` | Asma |
+| `abdoulrazack` | Abdoulrazack |
+| `kenedid` | Kenedid |
+
+> ⚠️ **Règle absolue :** Aucun développement direct sur `main`. La branche `main` doit toujours rester stable et fonctionnelle.
+
+---
+
+### Étape 1 — Travailler sur sa branche
+
+Commence toujours par te placer sur ta branche :
+
+```bash
+git checkout fatouma
+```
+
+> Remplace `fatouma` par le nom de ta propre branche.
+
+---
+
+### Étape 2 — Enregistrer et envoyer son travail
+
+Une fois ta fonctionnalité terminée :
+
+```bash
+git add .
+git commit -m "Description claire de ce que tu as fait"
+git push origin fatouma
+```
+
+Exemple pour une autre branche :
+
+```bash
+git checkout madina
+git add .
+git commit -m "Implémentation de la base de données terminée"
+git push origin madina
+```
+
+---
+
+### Étape 3 — Fusionner dans `main` après validation
+
+Une fois la fonctionnalité testée et validée, fusionner dans `main` :
+
+```bash
+# 1. Revenir sur main
+git checkout main
+
+# 2. Récupérer les dernières mises à jour
+git pull origin main
+
+# 3. Fusionner ta branche
+git merge fatouma
+
+# 4. Envoyer sur GitHub
+git push origin main
+```
+
+Répéter le même processus pour chaque branche :
+
+```bash
+git merge madina
+git merge mako
+git merge kadiga
+git merge samira
+git merge asma
+git merge abdoulrazack
+git merge kenedid
+```
+
+---
+
+### 📋 Résumé du flux de travail
+
+```
+Ta branche (ex: fatouma)
+        │
+        │  git add . && git commit && git push
+        │
+        ▼
+  Branche distante (GitHub)
+        │
+        │  Tests validés ✅
+        │
+        ▼
+      main  ←  git merge fatouma
+```
