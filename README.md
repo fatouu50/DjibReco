@@ -1,136 +1,119 @@
-DjibReco
+# 🍽️ DjibReco
+### *AI-powered restaurant & café recommender for Djibouti*
 
-DjibReco is an AI-powered web application that recommends cafés and restaurants in Djibouti using a hybrid recommendation system (content-based + collaborative filtering).
+[![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=flat-square)](.)
+[![Stack](https://img.shields.io/badge/Stack-Python_%7C_Flask_%7C_Scikit--learn-blue?style=flat-square)](.)
+[![Domain](https://img.shields.io/badge/Domain-AI_%7C_Recommendation_Systems-purple?style=flat-square)](.)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](.)
 
-The platform personalizes suggestions according to user preferences, ratings, and budget.
+> How can users in Djibouti quickly find cafés and restaurants that match their tastes and budget?  
+> **DjibReco** answers that question with a hybrid AI recommendation engine.
 
-Project Overview
+---
 
-DjibReco aims to solve a simple problem:
-How can users in Djibouti quickly find cafés and restaurants that match their tastes and budget?
+## 🎯 Overview
 
-The system combines:
+**DjibReco** is an AI-powered web application that recommends cafés and restaurants in Djibouti by combining two recommendation approaches into a single hybrid model — delivering personalized suggestions based on user preferences, ratings, and budget.
 
-Content-Based Filtering (cuisine type, price range, tags, location)
+---
 
-Collaborative Filtering (user ratings and behavior)
+## 🤖 Recommendation System
 
-Hybrid Recommendation Model (weighted combination of both approaches)
+```
+📋 Content-Based          👥 Collaborative           🔀 Hybrid Model
+─────────────────         ──────────────────         ──────────────────
+Cuisine type              User ratings               Weighted combination
+Price range               Similar users              of both approaches
+Tags & location           Behavioral patterns        Reduces cold-start
+```
 
-The application is built with Python and Flask, using a relational database and a simple frontend interface.
+---
 
-Tech Stack
+## 🚀 Features
 
-Backend:
+| Feature | Status |
+|:---|:---|
+| User authentication (register / login) | 🔄 Planned |
+| Add and rate restaurants | 🔄 Planned |
+| Personalized recommendations | 🔄 Planned |
+| Hybrid recommendation engine | 🔄 Planned |
+| Admin dashboard | 🔄 Planned |
+| Budget-based filtering | 🔄 Planned |
+| Restaurant search and filtering | 🔄 Planned |
 
-Python 3
+---
 
-Flask
+## 🛠️ Tech Stack
 
-SQLAlchemy
+```
+Backend      →  Python 3 · Flask · SQLAlchemy · Scikit-learn
+Database     →  SQLite (development) · PostgreSQL (production)
+Frontend     →  HTML · CSS · Jinja2 templates
+Data         →  Local CSV dataset · User ratings
+```
 
-Scikit-learn (for recommendation logic)
+---
 
-Database:
+## 📁 Project Structure
 
-SQLite (development)
-
-PostgreSQL (production-ready option)
-
-Frontend:
-
-HTML
-
-CSS
-
-Jinja2 templates
-
-Data:
-
-Restaurants dataset (local CSV or database entries)
-
-User ratings
-
-Project Structure
-
+```
 DjibReco/
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── models.py
+│   ├── recommender.py
+│   ├── templates/
+│   └── static/
+├── data/
+│   └── restaurants.csv
+├── tests/
+├── config.py
+├── run.py
+└── requirements.txt
+```
 
-app/
-• init.py
-• routes.py
-• models.py
-• recommender.py
-• templates/
-• static/
+---
 
-data/
-• restaurants.csv
+## ⚡ Installation & Launch
 
-tests/
-
-config.py
-run.py
-requirements.txt
-
-Installation
-
-Clone the repository:
-
+### 1. Clone the repository
+```bash
 git clone https://github.com/fatouu50/DjibReco.git
 cd DjibReco
+```
 
-Create and activate a virtual environment:
-
+### 2. Create and activate a virtual environment
+```bash
+# Windows
 python -m venv venv
+.\venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
 source venv/bin/activate
+```
 
-Install dependencies:
-
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-Run the application:
-
+### 4. Run the application
+```bash
 python run.py
-Features (Planned)
+```
 
-User authentication (register / login)
+The app will be available at **`http://localhost:5000`**
 
-Add and rate restaurants
+---
 
-Personalized recommendations
+## 🔮 Future Improvements
 
-Hybrid recommendation engine
+- 🌍 Online deployment
+- 📍 Geolocation-based filtering
+- 📊 Improved ranking algorithm
+- 👥 Real user dataset integration
+- 💬 Reviews and sentiment analysis
 
-Admin dashboard
-
-Budget-based filtering
-
-Restaurant search and filtering
-
-Recommendation System
-
-Content-Based Filtering
-Uses restaurant features such as cuisine type, price range, and tags.
-
-Collaborative Filtering
-Uses user ratings to detect similar users or items.
-
-Hybrid Model
-Combines both approaches to improve accuracy and reduce cold-start issues.
-
-Future Improvements
-
-Deploy online
-
-Add geolocation filtering
-
-Improve ranking algorithm
-
-Add real user dataset
-
-Integrate reviews and sentiment analysis
-
-Author
-
-Project developed by Fatouu50
-Master in Data Modeling & Artificial Intelligence
+---
