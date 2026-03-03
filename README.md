@@ -118,14 +118,6 @@ The app will be available at **`http://localhost:5000`**
 
 ---
 
-## 👤 Author
-
-Developed by [fatouu50](https://github.com/fatouu50)  
-*Master's in Data Modeling & Artificial Intelligence*  
-📩 fatoumasoubere@gmail.com
-
----
-
 ## 🤝 Comment Contribuer et Fusionner
 
 Chaque fonctionnalité est développée dans une branche dédiée :
@@ -225,3 +217,4 @@ Ta branche (ex: fatouma)
         ▼
       main  ←  git merge fatouma
 ```
+
